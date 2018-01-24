@@ -4,4 +4,4 @@ A custom light Jupyter Notebook theme based on aahoo's "Github Flavored Theme fo
 
 ## Usage
 
-Put `custom.css` in ~/.jupyter/custom
+Put `custom.css` in `~/.jupyter/custom`.
