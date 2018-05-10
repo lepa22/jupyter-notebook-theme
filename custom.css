@@ -21,6 +21,12 @@ div#maintoolbar {
 } 
 */
 
+/*SET COLOR VARIABLES*/
+
+:root {
+    --gray: #eee;
+    --lgray: #f7f7f7;
+}
 
 /* GLOBALS */
 
@@ -37,10 +43,11 @@ a:link {
 }
 body,
 .CodeMirror {
-  font-family: "Ubuntu", Roboto, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "Noto Sans", Roboto, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  background-color: var(--gray);
 }
 body.notebook_app {
-  background-color: white;
+  background-color: var(--gray);
 }
 .container {
   max-width: 1100px;
@@ -52,16 +59,18 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Ubuntu Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Noto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 /* INTRO PAGE */
 
 div.list_container {
   border-radius: 0;
+  background-color: var(--gray);
 }
 div.list_container > div {
   border-bottom: none;
+  background-color: var(--gray);
 }
 
 /* NOTEBOOK */
@@ -71,7 +80,7 @@ div.navbar-default {
   background-color: transparent;
 }
 body > #header {
-  background-color: #f7f7f7;
+  background-color: var(--lgray);
 }
 body > #header .header-bar {
   display: none;
@@ -85,13 +94,15 @@ div#notebook {
 div#notebook-container {
   padding: 0;
   box-shadow: none;
+  background-color: var(--gray);
 }
 .notebook_app > #header {
   box-shadow: 0px 0px 3px 1px rgba(87, 87, 87, 0.5);
 }
 div.text_cell_render {
-    font-family: "Ubuntu";
-    font-size: 12pt;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    background-color: var(--gray);
 }
 /* input cell */
 
@@ -101,11 +112,12 @@ div.input {
 div.input_prompt {
   color: #a71d5d;
   border: none;
+  background-color: var(--gray);
 }
 div.input_area {
   border-radius: 0;
   border: none;
-  background-color: #f7f7f7;
+  background-color: var(--lgray);
   box-shadow: 0 0, inset 0 0 0 1px #eee;
 }
 
@@ -113,7 +125,7 @@ div.input_area {
 
 div.output_area {
   flex-direction: column;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #999;
 }
 div.output_subarea {
   padding: 5px;
@@ -249,16 +261,17 @@ div.cell.selected.jupyter-soft-selected {
   background: none;
   /*overflow-x: auto;*/
   transition: all 0s ease-in-out;
+  background-color: var(--gray);
 }
 div.cell.selected,
 div.cell.jupyter-soft-selected,
 div.cell.selected.jupyter-soft-selected {
   box-shadow: 0 0 3px #333;
-  background: #fff;
+  background-color: var(--gray);
 }
 .edit_mode div.cell.selected {
   box-shadow: 0 0 3px #a71d5d;
-  background: #f7f7f7;
+  background: var(--gray);
 }
 div.rendered_html,
 div.CodeMirror-lines {
@@ -268,19 +281,22 @@ div.CodeMirror-lines {
   background: none;
 }
 div.code_cell .CodeMirror {
-  font-size: 14px;
+  font-size: 12px;
+  background-color: var(--lgray);
 }
 div.code_cell,
 div.output_text {
-  font-size: 14px;
+  font-size: 12px;
 }
 .text_cell .CodeMirror pre {
-    font-family: "Ubuntu Mono";
-    font-size: 11pt;
+    font-family: "Noto Mono";
+    font-size: 12px;
+    background-color: var(--lgray);
 }
 div.text_cell_render {
-    font-family: "Ubuntu";
-    font-size: 11pt;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    background-color: var(--gray);
 }
 div.prompt {
   min-width: auto;
@@ -318,9 +334,12 @@ div.CodeMirror span.CodeMirror-matchingbracket {
   background-color: transparent;
   border-right: solid 1px #ddd;
   color: rgba(0, 0, 0, 0.3);
+  background: var(--lgray);
 }
 .cm-s-ipython .CodeMirror-linenumber {
   color: rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  font-size: 12px;
 }
 .cm-s-ipython span.cm-number {
   color: #0086b3;
