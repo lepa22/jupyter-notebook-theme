@@ -5,3 +5,7 @@ A custom light Jupyter Notebook theme based on [aahoo's](https://gist.github.com
 ## Usage
 
 Place `custom.css` in `~/.jupyter/custom`.
+
+## Screenshot
+
+![Alt text](custom-jupyter-theme.png)
