@@ -2817,8 +2817,8 @@ div#pager #pager-contents {
 }
 div#pager pre {
  color: #586e75 !important;
- background: #fdf6e3 !important;
- background-color: #fdf6e3 !important;
+ background: #eee8d5 !important;
+ background-color: #eee8d5 !important;
  padding: 0.4em;
 }
 div#pager .ui-resizable-handle {
@@ -2986,7 +2986,8 @@ div.CodeMirror-linenumber,
  color: #268bd2;
 }
 .cm-s-ipython span.cm-property {
- color: #586e75;
+ /* color: #586e75; */
+ color: #6c71c4;
 }
 .cm-s-ipython span.cm-attribute {
  color: #586e75;
@@ -3147,9 +3148,9 @@ body :focus .MathJax {
  background-color: #fdf6e3;
  outline: none;
  border: none;
- padding: 0px;
+ padding: 3px;
  margin: 0px;
- margin-left: 2px;
+ margin-left: 0px;
  overflow: auto;
  font-family: "Ubuntu Mono", monospace, monospace;
  font-size: 11pt;
